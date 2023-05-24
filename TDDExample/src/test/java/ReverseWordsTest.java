@@ -22,27 +22,27 @@ class ReverseWordsTest {
 
     @Test
     void testDivision1() {
-        assertEquals("nahanut", ReverseWords.reverseWords("tunahan"));
+        assertEquals("Akca Tunahan", ReverseWords.reverseWords("Tunahan Akca"));
     }
 
     @Test
     void testDivision2() {
-        assertEquals("reenigne erawtfos ma i", ReverseWords.reverseWords("i am software engineer"));
+        assertEquals("engineer software am i", ReverseWords.reverseWords("i am software engineer"));
     }
 
     @Test
     void testDivision3() {
-        assertEquals("!kcul dooG", ReverseWords.reverseWords("Good luck!"));
+        assertEquals("luck! Good", ReverseWords.reverseWords("Good luck!"));
     }
 
     @Test
     void testDivision4() {
-        assertEquals("noitadilaV dna noitacifireV erawtfoS",
+        assertEquals("Validation and Verification Software",
                 ReverseWords.reverseWords("Software Verification and Validation"));
     }
 
     @Test
     void testDivision5() {
-        assertEquals("fedcba", ReverseWords.reverseWords("abcdef"));
+        assertEquals("JK Besiktas", ReverseWords.reverseWords("Besiktas JK"));
     }
 }
